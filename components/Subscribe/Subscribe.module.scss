@@ -31,13 +31,13 @@
 
         @media screen and (max-width: 700px) {
             font-size: 1rem;
-            padding: 0.4rem;
+            padding: 0.6rem;
             width: 75%;
         }
         font-weight: 400;
 
         &::placeholder {
-            padding-left: 0.5rem;
+            text-align: left;
             font-weight: 400;
             color: #ffffff;
         }
