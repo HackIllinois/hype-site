@@ -1,1 +1,1 @@
-# The Official Website of HackIllinois
+# HackIllinois Hype Site
