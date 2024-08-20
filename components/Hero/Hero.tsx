@@ -8,23 +8,27 @@ import Image from "next/image";
 const Hero: React.FC = () => {
     return (
         <section className={styles.main}>
-            <img
-                alt="HackIllinois Hype Animation"
-                src="/hero/hype_animation.gif"
-                className={styles.logoAnimation}
-            />
+            <div className={styles.top}>
+                {/* eslint-disable-next-line */}
+                <img
+                    alt="HackIllinois Hype Animation"
+                    src="/hero/hype_animation.gif"
+                    className={styles.logoAnimation}
+                />
 
-            <div className={styles.mainText}>
-                <div className={styles.title}>
-                    <h1>HackIllinois 2025</h1>
-                </div>
-                <div className={styles.subtitle}>
-                    <span className={styles.text}>coming soon</span>
+                <div className={styles.mainText}>
+                    <div className={styles.title}>
+                        <h1>HackIllinois 2025</h1>
+                    </div>
+                    <div className={styles.subtitle}>
+                        <span className={styles.text}>coming soon</span>
+                    </div>
                 </div>
             </div>
+
             <div className={styles.newsletter}>
                 <span className={styles.newsletterTitle}>
-                    Sign up for our newsletter to get new updates!
+                    Subscribe to our newsletter!
                 </span>
                 <Subscribe />
             </div>
