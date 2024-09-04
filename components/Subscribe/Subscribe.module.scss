@@ -4,20 +4,20 @@
     justify-content: center;
     flex-wrap: nowrap;
     column-gap: 5%;
+    width: 80%;
+
+    @media screen and (max-width: 700px) {
+        width: 100%;
+    }
 
     .input {
         color: #ffffff;
-        width: 60%;
+        width: 100%;
         border-radius: 0.75rem;
-        background-color: #0a697f;
-        border: 0;
-        font-size: 1.5rem;
+        background-color: #434343;
+        border: solid 0px #cdcdcd;
+        font-size: 1.25rem;
         padding: 1rem;
-
-        @media screen and (max-width: 1280px) {
-            font-size: 1.25rem;
-            padding: 0.75rem;
-        }
 
         @media screen and (max-width: 1024px) {
             font-size: 1rem;
@@ -31,25 +31,26 @@
 
         @media screen and (max-width: 700px) {
             font-size: 1rem;
-            padding: 0.4rem;
+            padding: 0.6rem;
             width: 75%;
         }
         font-weight: 400;
 
         &::placeholder {
-            padding-left: 0.5rem;
+            text-align: left;
             font-weight: 400;
             color: #ffffff;
+            opacity: 0.6;
         }
     }
 
     .button {
-        background-color: #305e42;
+        background-color: #fba036;
         color: #ffffff;
         border-radius: 0.75rem;
         padding: 0.25rem 2.5rem;
         border: 0;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 600;
         text-transform: uppercase;
         &:hover {
@@ -57,18 +58,13 @@
             transform: scale(1.05);
         }
 
-        @media screen and (max-width: 1280px) {
-            font-size: 2rem;
-            padding: 0.2rem 2rem;
-        }
-
         @media screen and (max-width: 1024px) {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             padding: 0.2rem 1.5rem;
         }
 
         @media screen and (max-width: 900px) {
-            font-size: 1.25rem;
+            font-size: 1rem;
             padding: 0.2rem 1.25rem;
         }
 

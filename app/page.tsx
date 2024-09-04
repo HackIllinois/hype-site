@@ -1,14 +1,12 @@
 import React from "react";
 import styles from "./page.module.scss";
 
-import Hero from "@/components/Hero/hero";
-import Footer from "@/components/Footer/Footer";
+import Hero from "@/components/Hero/Hero";
 
 const Home: React.FC = () => {
     return (
         <main className={styles.main}>
             <Hero />
-            <Footer />
         </main>
     );
 };
