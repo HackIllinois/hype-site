@@ -1,5 +1,5 @@
 .header {
-    padding: 1.5rem 2rem 0 0;
+    padding: 2.5rem 3rem 0 0;
     display: flex;
     justify-content: right;
 
@@ -18,8 +18,16 @@
     border-radius: 2rem;
 
     @media screen and (max-width: 750px) {
-        font-size: 20px;
+        font-size: 16px;
         padding: 0.5rem 1rem;
         border-radius: 1.25rem;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &:hover {
+        filter: brightness(95%);
     }
 }
