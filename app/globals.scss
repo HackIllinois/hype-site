@@ -87,8 +87,9 @@ body {
 
 body {
     position: relative;
+    height: 100svh;
     color: rgb(var(--foreground-rgb));
-    background-color: #5b619b;
+    background-color: #232323;
     overflow: clip;
     padding-right: 0 !important;
 }
