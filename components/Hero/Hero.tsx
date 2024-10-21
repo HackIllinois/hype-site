@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
 
                 <div className={styles.mainText}>
                     <div className={styles.title}>
-                        <h1>HackIllinois 2025</h1>
+                        <h1 data-text={"HackIllinois 2025"}>HackIllinois 2025</h1>
                     </div>
                     <div className={styles.subtitle}>
                         <span className={styles.text}>coming soon</span>
