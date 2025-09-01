@@ -2,29 +2,32 @@
 import { socials } from "@/modules/SocialsData";
 import Subscribe from "@/components/Subscribe/Subscribe";
 import styles from "./styles.module.scss";
-
-import Image from "next/image";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
     return (
         <section className={styles.main}>
             <div className={styles.top}>
-                {/* eslint-disable-next-line */}
-                <img
-                    alt="HackIllinois Hype Animation"
-                    src="/hero/hype_animation.gif"
-                    className={styles.logoAnimation}
-                />
-
                 <div className={styles.mainText}>
                     <div className={styles.title}>
-                        <h1 data-text={"HackIllinois 2025"}>HackIllinois 2025</h1>
+                        <h1 data-text={"HackIllinois 2026"}>
+                            HackIllinois 2026
+                        </h1>
                     </div>
                     <div className={styles.subtitle}>
                         <span className={styles.text}>coming soon</span>
                     </div>
                 </div>
             </div>
+
+            <Link
+                className={styles.link}
+                href={"https://info.hackillinois.org"}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                About Us
+            </Link>
 
             <div className={styles.newsletter}>
                 <span className={styles.newsletterTitle}>
