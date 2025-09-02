@@ -221,6 +221,8 @@
             border-radius: 9999px;
             width: 4rem;
             height: 4rem;
+            cursor: pointer;
+            transition: transform 0.2s;
 
             @media screen and (max-width: 1280px) {
                 width: 4rem;

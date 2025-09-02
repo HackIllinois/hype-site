@@ -1,27 +1,27 @@
 export const socials = [
     {
         id: 1,
-        name: "Facebook",
-        image: "/socials/facebook.svg",
-        url: "https://www.facebook.com/hackillinois/"
-    },
-    {
-        id: 2,
         name: "Instagram",
         image: "/socials/instagram.svg",
         url: "https://www.instagram.com/HackIllinois"
     },
     {
-        id: 3,
-        name: "TikTok",
-        image: "/socials/tiktok.svg",
-        url: "https://www.tiktok.com/@hackillinoisuiuc"
-    },
-    {
-        id: 4,
+        id: 2,
         name: "LinkedIn",
         image: "/socials/linkedin.svg",
         url: "https://www.linkedin.com/company/hackillinois"
+    },
+    {
+        id: 3,
+        name: "Facebook",
+        image: "/socials/facebook.svg",
+        url: "https://www.facebook.com/hackillinois/"
+    },
+    {
+        id: 4,
+        name: "TikTok",
+        image: "/socials/tiktok.svg",
+        url: "https://www.tiktok.com/@hackillinoisuiuc"
     },
     {
         id: 5,
