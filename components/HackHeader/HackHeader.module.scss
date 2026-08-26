@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo {
+    display: block;
+}
+
+.text {
+    text-align: left;
+    // actually use our standard text logo instead, try to find an svg but for now use the png
+}

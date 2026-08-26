@@ -1,0 +1,56 @@
+@use "/app/colors" as *;
+
+.button {
+    background-color: var(--background-color);
+    border: none;
+    color: $text-dark;
+    width: fit-content;
+    padding: 12px 24px;
+    display: inline-flex;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+        
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    @media screen and (max-width: 880px) {
+        width: 180px;
+        font-size: 16px;
+        padding: 12px 0;
+    }
+}
+
+.buttonEmpty {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: $text-light;
+    width: fit-content;
+    padding: 12px 24px;
+    display: inline-flex;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    @media screen and (max-width: 880px) {
+        width: 180px;
+        font-size: 16px;
+        padding: 12px 0;
+    }
+}

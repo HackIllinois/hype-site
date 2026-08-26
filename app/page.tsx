@@ -1,12 +1,58 @@
 import React from "react";
 import styles from "./page.module.scss";
-
-import Hero from "@/components/Hero/Hero";
+import { LinkButton } from "@/components/LinkButton";
+import Image from "next/image";
+import { CountdownTimer } from "@/components/CountdownTimer";
+import { HackHeader } from "@/components/HackHeader";
 
 const Home: React.FC = () => {
     return (
         <main className={styles.main}>
-            <Hero />
+            <div className={styles.contentSection}>
+                <div className={styles.logoBox}>
+                    <HackHeader />
+                </div>
+                <div className={styles.timerBox}>
+                    <CountdownTimer
+                        targetDate={new Date("2026-09-31T00:00:00")}
+                    />
+                    <div className={styles.timerText}>
+                        Until we ride into registration...
+                    </div>
+                </div>
+                <div className={styles.buttons}>
+                    <LinkButton link="https://info.hackillinois.org">
+                        Learn More
+                    </LinkButton>
+                    <LinkButton
+                        color="#FBA036"
+                        link="https://forms.gle/USQu9icxg8AGitKHA"
+                    >
+                        Interest Form
+                    </LinkButton>
+                    <LinkButton link="https://2026.hackillinois.org">
+                        2026 Site
+                    </LinkButton>
+                </div>
+            </div>
+            <div className={styles.backgroundDecoration}>
+                <Image
+                    src="/background/main_background.svg"
+                    width={100}
+                    height={160}
+                    style={{ width: "100%", height: "100%" }}
+                    alt=""
+                />
+            </div>
+            <div className={styles.mlhBanner}>
+                <Image
+                    src="/assets/mlh_banner_2027.svg"
+                    width={100}
+                    height={160}
+                    style={{ width: "100%", height: "auto" }}
+                    alt="MLH Official 2027 Season Hackathon"
+                />
+            </div>
         </main>
     );
 };

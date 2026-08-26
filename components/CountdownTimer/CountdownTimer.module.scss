@@ -1,0 +1,14 @@
+.countdown {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 160px;
+    text-align: center;
+    padding: 0px;
+    line-height: 160px;
+    letter-spacing: 3px;
+
+    @media screen and (max-width: 880px) {
+        font-size: 60px;
+        line-height: 80px;
+    }
+}
