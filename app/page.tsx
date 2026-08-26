@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./page.module.scss";
 import { LinkButton } from "@/components/LinkButton";
-import Image from "next/image";
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { HackHeader } from "@/components/HackHeader";
 
@@ -36,7 +35,7 @@ const Home: React.FC = () => {
                 </div>
             </div>
             <div className={styles.backgroundDecoration}>
-                <Image
+                <img
                     src="/background/main_background.svg"
                     width={100}
                     height={160}
@@ -45,7 +44,7 @@ const Home: React.FC = () => {
                 />
             </div>
             <div className={styles.mlhBanner}>
-                <Image
+                <img
                     src="/assets/mlh_banner_2027.svg"
                     width={100}
                     height={160}
