@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./page.module.scss";
 import { LinkButton } from "@/components/LinkButton";
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { HackHeader } from "@/components/HackHeader";
+import { TeamAppPopup } from "@/components/TeamAppPopup";
 
 const Home: React.FC = () => {
     return (
@@ -52,6 +53,7 @@ const Home: React.FC = () => {
                     alt="MLH Official 2027 Season Hackathon"
                 />
             </div>
+            <TeamAppPopup />
         </main>
     );
 };

@@ -1,0 +1,72 @@
+@use "/app/colors" as *;
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 0% 0%;
+    z-index: 1000;
+    border: 1px solid $text-light;
+    background-color: $text-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50svw;
+    height: fit-content;
+    scale: 0;
+    opacity: 0;
+    padding: 60px;
+    transition: opacity 0.3s ease, scale 0.3s ease;
+
+    @media screen and (max-width: 880px) {
+        width: 80svw;
+    }
+
+    &.open {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #111111;
+    opacity: 0.6;
+    width: 100lvw;
+    height: 100lvh;
+}
+
+.xButton {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+}
+
+.contentHeader {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+
+    @media screen and (max-width: 880px) {
+       font-size: 32px;
+    }
+}
+
+.contentBody {
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 36px;
+
+    @media screen and (max-width: 880px) {
+        font-size: 20px;
+    }
+}

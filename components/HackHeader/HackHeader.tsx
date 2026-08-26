@@ -1,3 +1,4 @@
+"use client";
 import styles from "./HackHeader.module.scss";
 
 export default function HackHeader() {
