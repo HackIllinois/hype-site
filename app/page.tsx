@@ -4,6 +4,7 @@ import { LinkButton } from "@/components/LinkButton";
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { HackHeader } from "@/components/HackHeader";
 import { TeamAppPopup } from "@/components/TeamAppPopup";
+import { Footer } from "@/components/Footer";
 
 const Home: React.FC = () => {
     return (
@@ -53,6 +54,7 @@ const Home: React.FC = () => {
                     alt="MLH Official 2027 Season Hackathon"
                 />
             </div>
+            <Footer />
             <TeamAppPopup />
         </main>
     );

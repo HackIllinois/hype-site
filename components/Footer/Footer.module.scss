@@ -1,0 +1,26 @@
+@use "/app/colors" as *;
+
+.footerContainer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 12px 24px;
+    background-color: #191919;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    color: #EEEEEE;
+}
+
+.footerLeftItems {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.footerLink {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
