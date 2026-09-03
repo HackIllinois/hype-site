@@ -36,6 +36,8 @@ const Home: React.FC = () => {
                     </LinkButton>
                 </div>
             </div>
+            <Footer />
+            {/* absolute content */}
             <div className={styles.backgroundDecoration}>
                 <img
                     src="/background/main_background.svg"
@@ -54,7 +56,6 @@ const Home: React.FC = () => {
                     alt="MLH Official 2027 Season Hackathon"
                 />
             </div>
-            <Footer />
             <TeamAppPopup />
         </main>
     );
