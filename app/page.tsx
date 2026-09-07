@@ -56,7 +56,7 @@ const Home: React.FC = () => {
                     alt="MLH Official 2027 Season Hackathon"
                 />
             </div>
-            <TeamAppPopup />
+            {/* <TeamAppPopup /> uncomment to show 'join our team' popup */}
         </main>
     );
 };
