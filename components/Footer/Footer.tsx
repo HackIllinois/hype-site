@@ -25,13 +25,25 @@ export default function Footer() {
                     MLH Code of Conduct
                 </a>
             </div>
-            <a
-                href={"mailto:contact@hackillinois.org"}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                contact@hackillinois.org
-            </a>
+            <div className={styles.footerContact}>
+                <a
+                    href={"mailto:contact@hackillinois.org"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    contact@hackillinois.org
+                </a>
+                <p className={styles.judgingContact}>
+                    Interested in becoming a judge or mentor? Email us at{" "}
+                    <a
+                        className={styles.footerLink}
+                        href="mailto:judging@hackillinois.org"
+                    >
+                        judging@hackillinois.org
+                    </a>
+                    .
+                </p>
+            </div>
         </div>
     );
 }
