@@ -34,7 +34,9 @@ export default function Footer() {
                     contact@hackillinois.org
                 </a>
                 <p className={styles.judgingContact}>
-                    Interested in becoming a judge or mentor? Email us at{" "}
+                    Interested in becoming a judge or mentor?
+                    <br />
+                    Email us at{" "}
                     <a
                         className={styles.footerLink}
                         href="mailto:judging@hackillinois.org"
